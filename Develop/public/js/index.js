@@ -78,6 +78,10 @@ function populateChart() {
   });
 }
 
+
+
+
+
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector("#t-name");
   let amountEl = document.querySelector("#t-amount");
@@ -127,6 +131,7 @@ function sendTransaction(isAdding) {
   .then(data => {
     if (data.errors) {
       errorEl.textContent = "Missing Information";
+      
     }
     else {
       // clear form
