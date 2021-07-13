@@ -104,8 +104,15 @@ function sendTransaction(isAdding) {
   };
 
   // if subtracting funds, convert amount to negative number
-  if (!isAdding) {
+  if (!isAdding) {   
+    alert("subtracting $" + transaction.value + " from account.")
     transaction.value *= -1;
+    
+
+  }
+  else{
+    alert("adding $" + transaction.value + " to account.")
+
   }
 
   // add to beginning of current array of data
@@ -151,8 +158,10 @@ function sendTransaction(isAdding) {
 
 document.querySelector("#add-btn").onclick = function() {
   sendTransaction(true);
+  
 };
 
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
+ 

@@ -1,0 +1,21 @@
+{
+    "name": "Budget Tracker",
+    "short_name": "Budgeter",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "An app that allows you mange your budget.",
+    "background_color": "#1cb597",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "/icons/icon-512x512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+  }
